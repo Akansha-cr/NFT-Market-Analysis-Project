@@ -91,7 +91,9 @@ def main():
         """,
         unsafe_allow_html=True
     )
-
+    first_section = st.container()
+    with first_section:
+        st.image('NFT-rafiki.png')
     # Create the main section layout
     main_section = st.container()
     with main_section:
