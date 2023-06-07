@@ -15,9 +15,9 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8px 8px;
+            padding: 5px 5px;
             background: linear-gradient(to bottom right, #0080ff, #00bfff);
-            border-radius: 0 0 10px 1px;
+            border-radius: 0 0 10px 10px;
             color: white;
         }
 
