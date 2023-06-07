@@ -15,7 +15,7 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1px 50px;
+            padding: 20px;
             background: transparent;
             border-radius: 0 0 20px 20px;
             color: white;
@@ -24,7 +24,7 @@ def main():
         .navbar ul {
             list-style: none;
             display: flex;
-            gap: 10px;
+            gap: 20px;
         }
 
         .navbar ul li {
@@ -51,14 +51,14 @@ def main():
     )
 
     # Create the page layout
-   st.markdown(
+    st.markdown(
         """
         <div class="navbar">
-            st.image('logo.png')
+            <h1 style="margin-right: auto;">My App</h1>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </div>
         """
