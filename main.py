@@ -15,12 +15,12 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 2px 50px;
             backdrop-filter: blur(10px);
             background-color: transparent;
             color: white;
-            border: 1px solid white;
             border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
         }
 
         .navbar ul {
@@ -39,11 +39,14 @@ def main():
             padding: 10px;
             border-radius: 20px;
             transition: background-color 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.5);
         }
 
         .navbar ul li a:hover {
             background-color: #f0f0f0;
             color: #333;
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.5);
         }
 
         </style>
