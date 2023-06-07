@@ -54,7 +54,7 @@ def main():
    st.markdown(
         """
         <div class="navbar">
-            <h1><img src="https://drive.google.com/file/d/1mjHRQbKze2Bgv6Wu1hvkrzZdLc-rVtjB/view?usp=sharing" style="width: 40px; height: 40px; margin-right: 10px;"></h1>
+            <h1><img src="https://raw.githubusercontent.com/NFT-Market-Analysis-Project/logo.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">.</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
