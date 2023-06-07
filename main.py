@@ -91,12 +91,12 @@ def main():
         """,
         unsafe_allow_html=True
     )
-    first_section = st.container()
+    
+    first_section,main_section = st.columns(2)
     with first_section:
         image = Image.open("NFT-rafiki.png")
         st.image(image, width=300)
     # Create the main section layout
-    main_section = st.container()
     with main_section:
         st.markdown(
             '''
