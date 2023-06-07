@@ -102,7 +102,7 @@ def main():
             '''
             <div class="main-section">
                <div class="url-uploader">
-                  <h2>Upload URL</h2>
+                  <h2>Upload URL of any NFT Collection</h2>
                 <form>
                     <label for="url">Enter URL:</label><br>
                     <input type="text" id="url" name="url"><br><br>
