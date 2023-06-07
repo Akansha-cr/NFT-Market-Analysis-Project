@@ -54,7 +54,6 @@ def main():
    st.markdown(
         """
         <div class="navbar">
-            <h1>Logo</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
