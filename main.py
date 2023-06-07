@@ -17,7 +17,7 @@ def main():
             align-items: center;
             padding: 10px;
             backdrop-filter: blur(10px);
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: transparent;
             color: white;
         }
 
