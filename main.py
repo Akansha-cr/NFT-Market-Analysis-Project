@@ -60,7 +60,7 @@ def main():
 
         .url-uploader {
             background-color: transparent;
-            padding: 1px 20px;
+            padding: 1px 30px;
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
         }
@@ -102,7 +102,7 @@ def main():
             '''
             <div class="main-section">
                <div class="url-uploader">
-                  <h1>Upload URL of any NFT Collection</h1>
+                  <p>Upload URL of any NFT Collection</p>
             ''',
             unsafe_allow_html=True
         )
