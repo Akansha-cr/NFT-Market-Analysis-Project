@@ -98,14 +98,21 @@ def main():
     # Create the main section layout
     main_section = st.container()
     with main_section:
-        st.markdown("<h2>Upload URL</h2>", unsafe_allow_html=True)
-        url_form = st.form("URL Form")
-        url_input = url_form.text_input("Enter URL:")
-        submit_button = url_form.form_submit_button("Submit")
-
-        # Process the URL input and display the image section
-        if submit_button:
-            st.success('This part is being developed')
+        st.markdown(
+            '''
+            <div class="main-section">
+               <div class="url-uploader">
+                  <h2>Upload URL</h2>
+                <form>
+                    <label for="url">Enter URL:</label><br>
+                    <input type="text" id="url" name="url"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        ''',
+        unsafe_allow_html=True
+)
 
 if __name__ == "__main__":
     main()
