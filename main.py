@@ -98,7 +98,14 @@ def main():
         st.image(image, width=400)
     # Create the main section layout
     with main_section:
-        st.markdown("<h2>Upload URL of any NFT Collection</h2>", unsafe_allow_html=True)
+        st.markdown(
+            '''
+            <div class="main-section">
+               <div class="url-uploader">
+                  <h2>Upload URL of any NFT Collection</h2>
+            ''',
+            unsafe_allow_html=True
+        )
         url_form = st.form("URL Form")
         url_input = url_form.text_input("Enter URL:")
         submit_button = url_form.form_submit_button("Submit")
