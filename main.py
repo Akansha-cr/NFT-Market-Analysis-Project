@@ -11,23 +11,14 @@ def main():
    st.markdown(
         """
         <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(to bottom right, #0080ff, #00bfff);
-        }
-
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 50px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            width: 80%;
+            background: linear-gradient(to bottom right, #0080ff, #00bfff);
+            border-radius: 0 0 20px 20px;
+            color: white;
         }
 
         .navbar ul {
@@ -42,7 +33,7 @@ def main():
 
         .navbar ul li a {
             text-decoration: none;
-            color: #333;
+            color: white;
             padding: 10px;
             border-radius: 20px;
             transition: background-color 0.3s ease;
@@ -50,6 +41,7 @@ def main():
 
         .navbar ul li a:hover {
             background-color: #f0f0f0;
+            color: #333;
         }
 
         </style>
@@ -61,15 +53,13 @@ def main():
     # Create the page layout
    st.markdown(
         """
-        <div class="container">
-            <div class="navbar">
-                <h1>NFT Collection analysis</h1>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+        <div class="navbar">
+            <h1>Logo</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
         """
         ,
