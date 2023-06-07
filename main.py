@@ -100,7 +100,7 @@ def main():
         ,
         unsafe_allow_html=True
     )
-    st.image('NFT-rafiki.png')
+   st.image('NFT-rafiki.png')
 
 if __name__ == "__main__":
     main()
