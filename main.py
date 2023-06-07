@@ -1,4 +1,10 @@
 import streamlit as st
+import streamlit.components.v1 as html
+import numpy as np
+import pandas as pd
+import io
+from PIL import Image
+import base64
 
 def main():
     # Add navigation bar
