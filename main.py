@@ -64,6 +64,9 @@ def main():
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
         }
         
+         .url-uploader h2 {
+            color: black;
+        }
         </style>
         """
         ,
@@ -84,7 +87,7 @@ def main():
         
          <div class="main-section">
             <div class="url-uploader">
-                <h2>URL Uploader</h2>
+                <h2>Upload URL</h2>
                  <form>
                     <label for="url">Enter URL:</label><br>
                     <input type="text" id="url" name="url"><br><br>
