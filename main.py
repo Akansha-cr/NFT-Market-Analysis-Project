@@ -52,9 +52,9 @@ def main():
 
     # Create the page layout
    st.markdown(
+       st.image('logo.png')
         """
         <div class="navbar">
-            <h1><img src="https://raw.githubusercontent.com/NFT-Market-Analysis-Project/logo.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">.</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
