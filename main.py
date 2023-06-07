@@ -61,47 +61,6 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.markdown(
-        """
-        <style>
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .left-section {
-            flex: 1;
-        }
-
-        .right-section {
-            flex: 1;
-            padding: 20px;
-        }
-        </style>
-        """
-        ,
-        unsafe_allow_html=True
-    )
-
-    # Create the page layout
-    st.markdown(
-        """
-        <div class="container">
-            <div class="left-section"></div>
-            <div class="right-section">
-                <h1>URL Analysis</h1>
-                <form>
-                    <label for="url">Enter URL:</label><br>
-                    <input type="text" id="url" name="url"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-        """
-        ,
-        unsafe_allow_html=True
-    )
-
 
 if __name__ == "__main__":
     main()
