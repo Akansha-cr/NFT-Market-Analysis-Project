@@ -15,7 +15,7 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2px 50px;
+            padding: 1px 60px;
             backdrop-filter: blur(10px);
             background-color: transparent;
             color: white;
