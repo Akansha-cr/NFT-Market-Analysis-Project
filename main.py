@@ -105,14 +105,6 @@ def main():
         # Process the URL input and display the image section
         if submit_button:
                 st.write("Entered URL:", url_input)
-        st.markdown(
-            '''
-            <div class="main-section">
-               <div class="url-uploader">
-                  <p>Upload URL of any NFT Collection</p>
-            ''',
-            unsafe_allow_html=True
-        )
 
 
 if __name__ == "__main__":
