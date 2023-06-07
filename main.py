@@ -99,9 +99,9 @@ def main():
     # Create the main section layout
     with main_section:
         st.markdown("<h2>Upload URL of any NFT Collection</h2>", unsafe_allow_html=True)
-            url_form = st.form("URL Form")
-            url_input = url_form.text_input("Enter URL:")
-            submit_button = url_form.form_submit_button("Submit")
+        url_form = st.form("URL Form")
+        url_input = url_form.text_input("Enter URL:")
+        submit_button = url_form.form_submit_button("Submit")
 
         # Process the URL input and display the image section
         if submit_button:
