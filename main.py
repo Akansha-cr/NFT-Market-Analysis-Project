@@ -69,6 +69,10 @@ def main():
         .url-uploader h2 {
             color: black;
         }
+
+        .image-section {
+            margin-right: 20px;
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -85,23 +89,23 @@ def main():
                 <li><a href="#">About</a></li>
             </ul>
         </div>
-
-        <div class="main-section">
-            <div class="image-section">
-                <img src="NFT-rafiki.png" alt="Image" style="width: 300px;">
-            </div>
-            <div class="url-uploader">
-                <h2>Upload URL</h2>
-                <form>
-                    <label for="url">Enter URL:</label><br>
-                    <input type="text" id="url" name="url"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
         """,
         unsafe_allow_html=True
     )
+
+    # Create the main section layout
+    main_section = st.beta_container()
+    with main_section:
+        st.markdown("<h2>Upload URL</h2>", unsafe_allow_html=True)
+        url_form = st.form(key="url_form")
+        url_input = url_form.text_input("Enter URL:")
+        submit_button = url_form.form_submit_button("Submit")
+
+    # Create the image section layout
+    image_section = st.beta_container()
+    with image_section:
+        image = Image.open("NFT-rafiki.png")
+        st.image(image, width=300)
 
 if __name__ == "__main__":
     main()
