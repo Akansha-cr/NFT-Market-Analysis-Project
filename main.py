@@ -51,7 +51,7 @@ def main():
     )
 
     # Create the page layout
-    st.markdown(
+   st.markdown(
         """
         <div class="navbar">
             <h1 style="margin-right: auto;">My App</h1>
