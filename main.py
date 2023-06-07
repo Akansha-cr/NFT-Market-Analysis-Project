@@ -16,8 +16,8 @@ def main():
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            background: transparent;
-            border-radius: 0 0 20px 20px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5);
             color: white;
         }
 
