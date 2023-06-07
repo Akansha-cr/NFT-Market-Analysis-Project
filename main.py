@@ -15,8 +15,8 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2px 45px;
-            background: linear-gradient(to bottom right, #0080ff, #00bfff);
+            padding: 1px 50px;
+            background: transparent;
             border-radius: 0 0 20px 20px;
             color: white;
         }
