@@ -8,27 +8,50 @@ import base64
 
 def main():
     # Add navigation bar
-    st.markdown(
+   st.markdown(
         """
         <style>
         .container {
             display: flex;
-            flex-direction: row;
-        }
-
-        .left-section {
-            flex: 1;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background: linear-gradient(to bottom right, #0080ff, #00bfff);
-            padding: 20px;
-            transform: skewX(-15deg);
-            color: white;
-            text-align: center;
         }
 
-        .right-section {
-            flex: 1;
-            padding: 20px;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 80%;
         }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            font-size: 18px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
         </style>
         """
         ,
@@ -39,21 +62,13 @@ def main():
     st.markdown(
         """
         <div class="container">
-            <div class="left-section">
+            <div class="navbar">
                 <h1>Logo</h1>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </div>
-            <div class="right-section">
-                <h1>URL Analysis</h1>
-                <form>
-                    <label for="url">Enter URL:</label><br>
-                    <input type="text" id="url" name="url"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
             </div>
         </div>
         """
