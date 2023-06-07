@@ -95,7 +95,7 @@ def main():
     first_section,main_section = st.columns(2)
     with first_section:
         image = Image.open("NFT-rafiki.png")
-        st.image(image, width=300)
+        st.image(image, width=400)
     # Create the main section layout
     with main_section:
         st.markdown(
