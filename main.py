@@ -110,7 +110,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+'''
 #background image
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -127,3 +127,4 @@ def add_bg_from_local(image_file):
     unsafe_allow_html=True
     )
 add_bg_from_local('Untitled design (1).png')
+'''
