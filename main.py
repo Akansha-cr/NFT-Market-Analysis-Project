@@ -66,7 +66,7 @@ def main():
         }
 
         .url-uploader h2 {
-            color: black;
+            color: white;
         }
 
         .image-section {
