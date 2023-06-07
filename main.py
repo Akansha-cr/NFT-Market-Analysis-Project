@@ -58,7 +58,7 @@ def main():
         }
 
         .url-uploader {
-            background-color: #f0f0f0;
+            background-color: transparent;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
