@@ -94,7 +94,7 @@ def main():
     )
 
     # Create the main section layout
-    main_section = st.beta_container()
+    main_section = st.container()
     with main_section:
         st.markdown("<h2>Upload URL</h2>", unsafe_allow_html=True)
         url_form = st.form(key="url_form")
@@ -102,7 +102,7 @@ def main():
         submit_button = url_form.form_submit_button("Submit")
 
     # Create the image section layout
-    image_section = st.beta_container()
+    image_section = st.container()
     with image_section:
         image = Image.open("NFT-rafiki.png")
         st.image(image, width=300)
