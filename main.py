@@ -6,6 +6,8 @@ import io
 from PIL import Image
 import base64
 
+import streamlit as st
+
 def main():
     # Add navigation bar
     st.markdown(
@@ -86,7 +88,7 @@ def main():
 
         <div class="main-section">
             <div class="image-section">
-                <img src="NFT-rafiki.png" alt="Image" width="300">
+                <img src="NFT-rafiki.png" alt="Image" style="width: 300px;">
             </div>
             <div class="url-uploader">
                 <h2>Upload URL</h2>
@@ -100,6 +102,10 @@ def main():
         """,
         unsafe_allow_html=True
     )
+
+if __name__ == "__main__":
+    main()
+
 #background image
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
