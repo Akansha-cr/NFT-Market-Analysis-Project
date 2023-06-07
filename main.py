@@ -15,16 +15,16 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 15px;
+            padding: 8px 8px;
             background: linear-gradient(to bottom right, #0080ff, #00bfff);
-            border-radius: 0 0 15px 15px;
+            border-radius: 0 0 10px 1px;
             color: white;
         }
 
         .navbar ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 10px;
         }
 
         .navbar ul li {
