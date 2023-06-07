@@ -15,7 +15,7 @@ def main():
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
             background: transparent;
             border-radius: 0 0 20px 20px;
             color: white;
@@ -28,7 +28,7 @@ def main():
         }
 
         .navbar ul li {
-            font-size: 18px;
+            font-size: 15px;
         }
 
         .navbar ul li a {
@@ -54,7 +54,7 @@ def main():
    st.markdown(
         """
         <div class="navbar">
-            <h1 style="margin-right: auto;">My App</h1>
+            <h1 style="margin-right: auto;">Analysis</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
