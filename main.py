@@ -59,11 +59,11 @@ def main():
     )
 
     # Create the page layout
-    st.markdown(
+   st.markdown(
         """
         <div class="container">
             <div class="navbar">
-                <h1>Logo</h1>
+                <h1>NFT Collection analysis</h1>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
