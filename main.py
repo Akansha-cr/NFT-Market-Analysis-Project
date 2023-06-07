@@ -8,7 +8,7 @@ import base64
 
 def main():
     # Add navigation bar
-   st.markdown(
+    st.markdown(
         """
         <style>
         .navbar {
@@ -48,10 +48,10 @@ def main():
             color: #333;
             box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.5);
         }
-        
+
         .main-section {
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
             height: calc(100vh - 100px); /* Subtracting the navbar height */
             padding: 20px;
@@ -63,18 +63,17 @@ def main():
             border-radius: 10px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
         }
-        
-         .url-uploader h2 {
+
+        .url-uploader h2 {
             color: black;
         }
         </style>
-        """
-        ,
+        """,
         unsafe_allow_html=True
     )
-  
+
     # Create the page layout
-   st.markdown(
+    st.markdown(
         """
         <div class="navbar">
             <h1 style="margin-right: auto;">Analysis</h1>
@@ -84,43 +83,24 @@ def main():
                 <li><a href="#">About</a></li>
             </ul>
         </div>
-        
-         <div class="main-section">
+
+        <div class="main-section">
+            <div class="image-section">
+                <img src="NFT-rafiki.png" alt="Image" width="300">
+            </div>
             <div class="url-uploader">
                 <h2>Upload URL</h2>
-                 <form>
+                <form>
                     <label for="url">Enter URL:</label><br>
                     <input type="text" id="url" name="url"><br><br>
                     <input type="submit" value="Submit">
-                 </form>
+                </form>
             </div>
         </div>
-        
-        """
-        ,
+        """,
         unsafe_allow_html=True
     )
-   image = 'NFT-rafiki.png'
 
-   # Resize and position the image to the left side
-   st.image(image, width=300, use_column_width=False, clamp=True)
 
 if __name__ == "__main__":
     main()
-
-    #background image
-def add_bg_from_local(image_file):
-    with open(image_file, "rb") as image_file:
-        encoded_string = base64.b64encode(image_file.read())
-    st.markdown(
-    f"""
-    <style>
-    .stApp {{
-        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        background-size: cover
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
-add_bg_from_local('Untitled design.png')
