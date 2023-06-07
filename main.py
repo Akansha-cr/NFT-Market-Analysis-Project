@@ -95,11 +95,11 @@ def main():
     first_section,main_section = st.columns(2)
     with first_section:
         image = Image.open("NFT-rafiki.png")
-        st.image(image, width=400)
+        st.image(image, width=300)
     # Create the main section layout
     with main_section:
         with st.container():
-            st.markdown("<h2>URL Uploader</h2>", unsafe_allow_html=True)
+            st.markdown("<h2>Upload Url of any NFT Collection</h2>", unsafe_allow_html=True)
 
             url_input = st.text_input("Enter URL:")
             submit_button = st.button("Submit")
