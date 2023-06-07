@@ -85,7 +85,11 @@ def main():
          <div class="main-section">
             <div class="url-uploader">
                 <h2>URL Uploader</h2>
-                <!-- Add your URL uploader form or component here -->
+                 <form>
+                    <label for="url">Enter URL:</label><br>
+                    <input type="text" id="url" name="url"><br><br>
+                    <input type="submit" value="Submit">
+                 </form>
             </div>
         </div>
         
