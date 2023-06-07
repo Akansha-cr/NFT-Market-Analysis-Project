@@ -8,7 +8,7 @@ import base64
 
 def main():
     # Add navigation bar
-  st.markdown(
+    st.markdown(
         """
         <style>
         .container {
