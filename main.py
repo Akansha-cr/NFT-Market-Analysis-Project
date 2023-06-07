@@ -19,6 +19,8 @@ def main():
             backdrop-filter: blur(10px);
             background-color: transparent;
             color: white;
+            border: 1px solid white;
+            border-radius: 10px;
         }
 
         .navbar ul {
