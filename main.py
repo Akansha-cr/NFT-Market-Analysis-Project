@@ -48,7 +48,22 @@ def main():
             color: #333;
             box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px rgba(255, 255, 255, 0.5);
         }
+        
+        .main-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: calc(100vh - 100px); /* Subtracting the navbar height */
+            padding: 20px;
+        }
 
+        .url-uploader {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
+        }
+        
         </style>
         """
         ,
@@ -66,6 +81,14 @@ def main():
                 <li><a href="#">About</a></li>
             </ul>
         </div>
+        
+         <div class="main-section">
+            <div class="url-uploader">
+                <h2>URL Uploader</h2>
+                <!-- Add your URL uploader form or component here -->
+            </div>
+        </div>
+        
         """
         ,
         unsafe_allow_html=True
