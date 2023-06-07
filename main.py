@@ -93,7 +93,8 @@ def main():
     )
     first_section = st.container()
     with first_section:
-        st.image('NFT-rafiki.png')
+        image = Image.open("NFT-rafiki.png")
+        st.image(image, width=300)
     # Create the main section layout
     main_section = st.container()
     with main_section:
@@ -104,10 +105,7 @@ def main():
 
         # Process the URL input and display the image section
         if submit_button:
-            image_section = st.container()
-            with image_section:
-                image = Image.open("NFT-rafiki.png")
-                st.image(image, width=300)
+            st.success('This part is being developed')
 
 if __name__ == "__main__":
     main()
