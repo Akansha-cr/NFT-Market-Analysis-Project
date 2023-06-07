@@ -8,20 +8,26 @@ import base64
 
 def main():
     # Add navigation bar
-    st.markdown(
+  st.markdown(
         """
         <style>
-        .navbar {
+        .container {
             display: flex;
-            background-color: purple;
-            padding: 15px;
-            color: #fff;
+            flex-direction: row;
         }
 
-        .navbar a {
-            color: #fff;
-            margin-right: 15px;
-            text-decoration: none;
+        .left-section {
+            flex: 1;
+            background: linear-gradient(to bottom right, #0080ff, #00bfff);
+            padding: 20px;
+            transform: skewX(-15deg);
+            color: white;
+            text-align: center;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 20px;
         }
         </style>
         """
@@ -29,28 +35,32 @@ def main():
         unsafe_allow_html=True
     )
 
+    # Create the page layout
     st.markdown(
         """
-        <div class="navbar">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+        <div class="container">
+            <div class="left-section">
+                <h1>Logo</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <h1>URL Analysis</h1>
+                <form>
+                    <label for="url">Enter URL:</label><br>
+                    <input type="text" id="url" name="url"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
         """
         ,
         unsafe_allow_html=True
     )
 
-    # Add content based on selected page
-    page = st.sidebar.radio("Navigation", ["Home", "About", "Contact"])
-
-    if page == "Home":
-        st.write("Welcome to the Home page!")
-    elif page == "About":
-        st.write("This is the About page.")
-    elif page == "Contact":
-        st.write("You can reach us on the Contact page.")
-        
     st.markdown(
         """
         <style>
