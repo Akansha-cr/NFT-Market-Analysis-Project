@@ -98,6 +98,13 @@ def main():
         st.image(image, width=400)
     # Create the main section layout
     with main_section:
+        url_form = st.form("URL Form")
+        url_input = url_form.text_input("Enter URL:")
+        submit_button = url_form.form_submit_button("Submit")
+
+        # Process the URL input and display the image section
+        if submit_button:
+                st.write("Entered URL:", url_input)
         st.markdown(
             '''
             <div class="main-section">
@@ -106,13 +113,6 @@ def main():
             ''',
             unsafe_allow_html=True
         )
-        url_form = st.form("URL Form")
-        url_input = url_form.text_input("Enter URL:")
-        submit_button = url_form.form_submit_button("Submit")
-
-        # Process the URL input and display the image section
-        if submit_button:
-                st.write("Entered URL:", url_input)
 
 
 if __name__ == "__main__":
