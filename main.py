@@ -40,6 +40,9 @@ def main():
 
     if page == "Home":
         st.write("Welcome to the Home page!")
+        url = st.text_input("Enter URL")
+        if st.button("Submit"):
+            st.write("URL submitted:", url)
     elif page == "About":
         st.write("This is the About page.")
     elif page == "Contact":
