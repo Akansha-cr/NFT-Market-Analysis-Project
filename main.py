@@ -72,7 +72,7 @@ def main():
         ,
         unsafe_allow_html=True
     )
-   st.image('NFT-rafiki.png')
+  
     # Create the page layout
    st.markdown(
         """
@@ -100,7 +100,10 @@ def main():
         ,
         unsafe_allow_html=True
     )
-   
+   image = 'NFT-rafiki.png'
+
+   # Resize and position the image to the left side
+   st.image(image, width=300, use_column_width=False, clamp=True)
 
 if __name__ == "__main__":
     main()
