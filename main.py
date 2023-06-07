@@ -52,9 +52,9 @@ def main():
 
     # Create the page layout
    st.markdown(
-       st.image('logo.png')
         """
         <div class="navbar">
+            st.image('logo.png')
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
